@@ -12,38 +12,82 @@
         <h1>QUIZ</h1>
         <h3>Let's Play!</h3>
         <h5>Play now & Win</h5>
-        <button id="playNow">Play now</button>
-        <button id="firstAbout">About</button>
+        <button id="playNow" onclick="playNow()">Play now</button>
+        <button id="firstAbout" onclick="firstAbout()">About</button>
+    </main>
+
+    <main id="about">
+        <button id="aboutBack" onclick="aboutBack()">back</button>
+        <div id="aboutApp">
+            <p>Welcome to <span>Hokees Quiz App</span>, a quiz app designed to make learning fun and engaging!
+                Explore a variety of quiz categories, challenge your knowledge, and enjoy a seamless user experience.
+                Our mission is to provide a platform that not only entertains but also educates.
+                I am <span>Shittu Adedamola</span>, <span>the developer</span> behind this app, and I hope you have a great time exploring and 
+                learning with <span>Hokees Quiz App</span>. Connect with us on on social media for updates and feel free to share your feedback.
+                <span>Happy quizzing!</span>
+            </p>
+        </div>
     </main>
 
     <main id="difficulty">
-        <button id="backOne">back</button>
+        <button id="backOne" onclick="backOne()">back</button>
         <button id="levelUp">Level up</button>
 
         <div id="easyDiv">
             <p>Easy</p>
-            <button>Start Quiz</button>
+            <button id="easyQuiz" onclick="easyQuiz()">Start Quiz</button>
         </div>
         <div id="normalDiv">
             <p>Normal</p>
-            <button>Start Quiz</button>
+            <button id="normalQuiz">Start Quiz</button>
         </div>
         <div id="hardDiv">
             <p>Hard</p>
-            <button>Start Quiz</button>
+            <button id="hardQuiz">Start Quiz</button>
         </div>
 
-        <button id="secondAbout">About</button>
+        <button id="secondAbout" onclick="secondAbout()">About</button>
+    </main>
+
+    <main id="difficultyAbout">
+        <button id="difficultyBack" onclick="difficultyBack()">back</button>
+        <div>
+            <p>At <span>Hokees Quiz App</span>, we believe in catering to diverse audiences with varying levels of knowledge and expertise. 
+                Our decision to incorporate different difficulty levels is rooted in providing a personalized and enjoyable quiz 
+                experience for everyone.
+            </p>
+            <p>Whether you're a quiz enthusiast looking for a challenge or a beginner eager to learn, our app has you covered. 
+                The multiple difficulty levels allow users to choose quizzes that align with their current knowledge, ensuring a 
+                tailored learning experience.
+            </p>
+            <p>We strive to create an inclusive environment where users of all skill levels can feel comfortable participating. 
+                From easy questions designed for beginners to challenging ones that will test even the most seasoned experts, there's 
+                something for everyone.
+            </p>
+            <p>For those looking to enhance their knowledge gradually, our progressive difficulty levels provide a structured path for 
+                skill development. Start with the basics and work your way up, tracking your progress along the way.
+            </p>
+            <p>By offering different difficulty levels, we aim to keep the quizzes adaptable and engaging. Users can choose their preferred 
+                challenge level, ensuring that every quiz session is both stimulating and rewarding.
+            </p>
+            <p>Join us on this educational journey, where learning is not only accessible but also tailored to suit your unique preferences. 
+                <span>Happy quizzing!</span>
+            </p>
+        </div>
     </main>
 
     <main id="exam">
-        <button id="backTwo">back</button>
+        <button id="backTwo" onclick="examBack()">back</button>
         <h3 id="level"></h3>
         <h3 id="question"></h3>
-        <button id="optOne"></button>
-        <button id="optTwo"></button>
-        <button id="optThree"></button>
-        <button id="optFour"></button>
+        <button id="buttonA">A. <span id="optOne"></span></button>
+        <button id="buttonB">B. <span id="optTwo"></span></button>
+        <button id="buttonC">C. <span id="optThree"></span></button>
+        <button id="buttonD">D. <span id="optFour"></span></button>
+        <div id="commands">
+            <button id="examNext" onclick="examNext()">Next</button>
+            <button id="examSubmit">Submit</button>
+        </div>
     </main>
 </body>
 </html>
