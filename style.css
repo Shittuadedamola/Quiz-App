@@ -266,7 +266,8 @@
     text-align: center;
 }
 
-#buttonA, #buttonB, #buttonC, #buttonD, #normalbuttonA, #normalbuttonB, #normalbuttonC, #normalbuttonD{
+#buttonA, #buttonB, #buttonC, #buttonD, #normalbuttonA, #normalbuttonB, #normalbuttonC, #normalbuttonD, 
+#hardbuttonA, #hardbuttonB, #hardbuttonC, #hardbuttonD{
     color: white;
     font-size: 2rem;
     margin-bottom: 10px;
@@ -280,32 +281,32 @@
    align-items: center;
 }
 
-#easyNext, #normalNext{
-      /* margin-top: 5%; */
-      width: 200px;
-      height: 50px;
-      color: white;
-      background: rgb(34, 20, 221);
-      border: 3px solid rgb(34, 20, 221);
-      border-radius: 30px;
-      /* margin-top: 10%; */
-      font-size: 1.5rem;
+#easyNext, #normalNext, #hardNext{
+    /* margin-top: 5%; */
+    width: 200px;
+    height: 50px;
+    color: white;
+    background: rgb(34, 20, 221);
+     border: 3px solid rgb(34, 20, 221);
+    border-radius: 30px;
+    /* margin-top: 10%; */
+    font-size: 1.5rem;
 }
 
-#easySubmit, #normalSubmit{
-      /* margin-top: 5%; */
-      width: 200px;
-      height: 50px;
-      color: white;
-      background: rgb(34, 20, 221);
-      border: 3px solid rgb(34, 20, 221);
-      border-radius: 30px;
-      margin-top: 10%;
-      font-size: 1.5rem;
-      display: none;
+#easySubmit, #normalSubmit, #hardSubmit{
+    /* margin-top: 5%; */
+    width: 200px;
+    height: 50px;
+    color: white;
+    background: rgb(34, 20, 221);
+    border: 3px solid rgb(34, 20, 221);
+    border-radius: 30px;
+    margin-top: 10%;
+    font-size: 1.5rem;
+    display: none;
 }
 
-#easyResult, #normalResult{
+#easyResult, #normalResult, #hardResult{
     display: flex;
     flex-direction: column;
     width: 600px;
@@ -316,13 +317,13 @@
     display: none;
 }
 
-#yourScore, #normalScore{
+#yourScore, #normalScore, #hardScore{
     color: lightblue;
     margin: 30%;
     text-align: center;
 }
 
-#easyHome, #normalHome{
+#easyHome, #normalHome, #hardHome{
     width: 200px;
     height: 50px;
     color: white;

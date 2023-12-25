@@ -6,6 +6,7 @@ const playNow=()=>{
 const backOne=()=>{
     document.getElementById("home").style.display = "flex"
     document.getElementById("difficulty").style.display = "none"
+    location.reload(true)
 }
 
 const firstAbout=()=>{
@@ -690,6 +691,337 @@ const normalSubmit=()=>{
 
 const normalHome=()=>{
     document.getElementById("normalResult").style.display = "none"
+    document.getElementById("home").style.display = "flex"
+    location.reload(true)
+}
+
+var hardQuestions = [
+    {
+        question: "Q.1 Where in the human body will you find the medulla oblongata?",
+        option: ["Brain", "Spine", "Small intestine", "Liver"]
+    },
+    {
+        question: "Q.2 What year was the very first model of iPhone released?",
+        option: ["2009", "2004", "2007", "2011"]
+    },
+    {
+        question: "Q.3 Which animals are pearls found in?",
+        option: ["Elephants", "Oysters", "Periwinkles", "Snakes"]
+    },
+    {
+        question: "Q.4 In which year did Usain Bolt set his 100m in 9.58 seconds world record?",
+        option: ["2006", "2007", "2015", "2009"]
+    },
+    {
+        question: "Q.5 What or who is the Ford Mustang named after?",
+        option: ["An automotive designer", "A fighter plane from WWII", "A president", "The company owner"]
+    },
+    {
+        question: "Q.6 What name does deer meat go by?",
+        option: ["Squab", "Beef", "Venison", "Pork"]
+    },
+    {
+        question: "Q.7 What is the spiciest chili in the world?",
+        option: ["The Carolina Reaper", "Tabasco", "Cayenne", "Jwala"]
+    },
+    {
+        question: "Q.8 How many time zones are there in Russia?",
+        option: ["3", "6", "5", "11"]
+    },
+    {
+        question: "Q.9 Which bone are babies born without?",
+        option: ["Femur", "Knee cap", "Clavicle", "Scaphoid"]
+    },
+    {
+        question: "Q.10 Approximately, how many heads are on Easter Island?",
+        option: ["978", "1903", "1043", "1404"]
+    }
+]
+
+const hardQuiz=()=>{
+    document.getElementById("hardExam").style.display = "flex"
+    document.getElementById("difficulty").style.display = "none"
+    document.getElementById("hardLevel").innerHTML = "Hard"
+    document.getElementById("hardQuestion").innerHTML = hardQuestions[0].question
+    document.getElementById("hardoptOne").innerHTML = hardQuestions[0].option[0]
+    document.getElementById("hardoptTwo").innerHTML = hardQuestions[0].option[1]
+    document.getElementById("hardoptThree").innerHTML = hardQuestions[0].option[2]
+    document.getElementById("hardoptFour").innerHTML = hardQuestions[0].option[3]
+}
+
+var g = 1
+var h = 1
+var i = 1
+var j = 1
+var k = 1
+var l = 0
+
+const hardNext=()=>{
+    document.getElementById("hardQuestion").innerHTML = hardQuestions[g++].question
+    document.getElementById("hardoptOne").innerHTML = hardQuestions[h++].option[0]
+    document.getElementById("hardoptTwo").innerHTML = hardQuestions[i++].option[1]
+    document.getElementById("hardoptThree").innerHTML = hardQuestions[j++].option[2]
+    document.getElementById("hardoptFour").innerHTML = hardQuestions[k++].option[3]
+    // document.getElementById("buttonA").style.backgroundColor = "rgb(17, 1, 91)"
+    // document.getElementById("buttonB").style.backgroundColor = "rgb(17, 1, 91)"
+    // document.getElementById("buttonC").style.backgroundColor = "rgb(17, 1, 91)"
+    // document.getElementById("buttonD").style.backgroundColor = "rgb(17, 1, 91)"
+
+    if ((document.getElementById("hardQuestion").innerHTML === hardQuestions[1].question) && (document.getElementById("hardbuttonA").style.backgroundColor === "rgb(17, 1, 151)")) {
+        document.getElementById("hardScore").innerHTML = parseInt(document.getElementById("hardScore").innerHTML) + 1
+    }
+
+    else if ((document.getElementById("hardQuestion").innerHTML === hardQuestions[1].question) && (document.getElementById("hardbuttonB").style.backgroundColor === "rgb(17, 1, 151)")) {
+        document.getElementById("hardScore").innerHTML = parseInt(document.getElementById("hardScore").innerHTML) + 0
+    }
+
+    else if ((document.getElementById("hardQuestion").innerHTML === hardQuestions[1].question) && (document.getElementById("hardbuttonC").style.backgroundColor === "rgb(17, 1, 151)")) {
+        document.getElementById("hardScore").innerHTML = parseInt(document.getElementById("hardScore").innerHTML) + 0
+    }
+
+    else if ((document.getElementById("hardQuestion").innerHTML === hardQuestions[1].question) && (document.getElementById("hardbuttonD").style.backgroundColor === "rgb(17, 1, 151)")) {
+        document.getElementById("hardScore").innerHTML = parseInt(document.getElementById("hardScore").innerHTML) + 0
+    }
+
+
+
+    else if ((document.getElementById("hardQuestion").innerHTML === hardQuestions[2].question) && (document.getElementById("hardbuttonA").style.backgroundColor === "rgb(17, 1, 151)")) {
+        document.getElementById("hardScore").innerHTML = parseInt(document.getElementById("hardScore").innerHTML) + 0
+    }
+
+    else if ((document.getElementById("hardQuestion").innerHTML === hardQuestions[2].question) && (document.getElementById("hardbuttonB").style.backgroundColor === "rgb(17, 1, 151)")) {
+        document.getElementById("hardScore").innerHTML = parseInt(document.getElementById("hardScore").innerHTML) + 0
+    }
+
+    else if ((document.getElementById("hardQuestion").innerHTML === hardQuestions[2].question) && (document.getElementById("hardbuttonC").style.backgroundColor === "rgb(17, 1, 151)")) {
+        document.getElementById("hardScore").innerHTML = parseInt(document.getElementById("hardScore").innerHTML) + 1
+    }
+
+    else if ((document.getElementById("hardQuestion").innerHTML === hardQuestions[2].question) && (document.getElementById("hardbuttonD").style.backgroundColor === "rgb(17, 1, 151)")) {
+        document.getElementById("hardScore").innerHTML = parseInt(document.getElementById("hardScore").innerHTML) + 0
+    }
+
+
+
+    else if ((document.getElementById("hardQuestion").innerHTML === hardQuestions[3].question) && (document.getElementById("hardbuttonA").style.backgroundColor === "rgb(17, 1, 151)")) {
+        document.getElementById("hardScore").innerHTML = parseInt(document.getElementById("hardScore").innerHTML) + 0
+    }
+
+    else if ((document.getElementById("hardQuestion").innerHTML === hardQuestions[3].question) && (document.getElementById("hardbuttonB").style.backgroundColor === "rgb(17, 1, 151)")) {
+        document.getElementById("hardScore").innerHTML = parseInt(document.getElementById("hardScore").innerHTML) + 1
+    }
+
+    else if ((document.getElementById("hardQuestion").innerHTML === hardQuestions[3].question) && (document.getElementById("hardbuttonC").style.backgroundColor === "rgb(17, 1, 151)")) {
+        document.getElementById("hardScore").innerHTML = parseInt(document.getElementById("hardScore").innerHTML) + 0
+    }
+
+    else if ((document.getElementById("hardQuestion").innerHTML === hardQuestions[3].question) && (document.getElementById("hardbuttonD").style.backgroundColor === "rgb(17, 1, 151)")) {
+        document.getElementById("hardScore").innerHTML = parseInt(document.getElementById("hardScore").innerHTML) + 0
+    }
+
+
+
+    else if ((document.getElementById("hardQuestion").innerHTML === hardQuestions[4].question) && (document.getElementById("hardbuttonA").style.backgroundColor === "rgb(17, 1, 151)")) {
+        document.getElementById("hardScore").innerHTML = parseInt(document.getElementById("hardScore").innerHTML) + 0
+    }
+
+    else if ((document.getElementById("hardQuestion").innerHTML === hardQuestions[4].question) && (document.getElementById("hardbuttonB").style.backgroundColor === "rgb(17, 1, 151)")) {
+        document.getElementById("hardScore").innerHTML = parseInt(document.getElementById("hardScore").innerHTML) + 0
+    }
+
+    else if ((document.getElementById("hardQuestion").innerHTML === hardQuestions[4].question) && (document.getElementById("hardbuttonC").style.backgroundColor === "rgb(17, 1, 151)")) {
+        document.getElementById("hardScore").innerHTML = parseInt(document.getElementById("hardScore").innerHTML) + 0
+    }
+
+    else if ((document.getElementById("hardQuestion").innerHTML === hardQuestions[4].question) && (document.getElementById("hardbuttonD").style.backgroundColor === "rgb(17, 1, 151)")) {
+        document.getElementById("hardScore").innerHTML = parseInt(document.getElementById("hardScore").innerHTML) + 1
+    }
+
+
+
+    else if ((document.getElementById("hardQuestion").innerHTML === hardQuestions[5].question) && (document.getElementById("hardbuttonA").style.backgroundColor === "rgb(17, 1, 151)")) {
+        document.getElementById("hardScore").innerHTML = parseInt(document.getElementById("hardScore").innerHTML) + 0
+    }
+
+    else if ((document.getElementById("hardQuestion").innerHTML === hardQuestions[5].question) && (document.getElementById("hardbuttonB").style.backgroundColor === "rgb(17, 1, 151)")) {
+        document.getElementById("hardScore").innerHTML = parseInt(document.getElementById("hardScore").innerHTML) + 1
+    }
+
+    else if ((document.getElementById("hardQuestion").innerHTML === hardQuestions[5].question) && (document.getElementById("hardbuttonC").style.backgroundColor === "rgb(17, 1, 151)")) {
+        document.getElementById("hardScore").innerHTML = parseInt(document.getElementById("hardScore").innerHTML) + 0
+    }
+
+    else if ((document.getElementById("hardQuestion").innerHTML === hardQuestions[5].question) && (document.getElementById("hardbuttonD").style.backgroundColor === "rgb(17, 1, 151)")) {
+        document.getElementById("hardScore").innerHTML = parseInt(document.getElementById("hardScore").innerHTML) + 0
+    }
+
+
+
+    else if ((document.getElementById("hardQuestion").innerHTML === hardQuestions[6].question) && (document.getElementById("hardbuttonA").style.backgroundColor === "rgb(17, 1, 151)")) {
+        document.getElementById("hardScore").innerHTML = parseInt(document.getElementById("hardScore").innerHTML) + 0
+    }
+
+    else if ((document.getElementById("hardQuestion").innerHTML === hardQuestions[6].question) && (document.getElementById("hardbuttonB").style.backgroundColor === "rgb(17, 1, 151)")) {
+        document.getElementById("hardScore").innerHTML = parseInt(document.getElementById("hardScore").innerHTML) + 0
+    }
+    
+    else if ((document.getElementById("hardQuestion").innerHTML === hardQuestions[6].question) && (document.getElementById("hardbuttonC").style.backgroundColor === "rgb(17, 1, 151)")) {
+        document.getElementById("hardScore").innerHTML = parseInt(document.getElementById("hardScore").innerHTML) + 1
+    }
+
+    else if ((document.getElementById("hardQuestion").innerHTML === hardQuestions[6].question) && (document.getElementById("hardbuttonD").style.backgroundColor === "rgb(17, 1, 151)")) {
+        document.getElementById("hardScore").innerHTML = parseInt(document.getElementById("hardScore").innerHTML) + 0
+    }
+
+
+
+    else if ((document.getElementById("hardQuestion").innerHTML === hardQuestions[7].question) && (document.getElementById("hardbuttonA").style.backgroundColor === "rgb(17, 1, 151)")) {
+        document.getElementById("hardScore").innerHTML = parseInt(document.getElementById("hardScore").innerHTML) + 1
+    }
+
+    else if ((document.getElementById("hardQuestion").innerHTML === hardQuestions[7].question) && (document.getElementById("hardbuttonB").style.backgroundColor === "rgb(17, 1, 151)")) {
+        document.getElementById("hardScore").innerHTML = parseInt(document.getElementById("hardScore").innerHTML) + 0
+    }
+
+    else if ((document.getElementById("hardQuestion").innerHTML === hardQuestions[7].question) && (document.getElementById("hardbuttonC").style.backgroundColor === "rgb(17, 1, 151)")) {
+        document.getElementById("hardScore").innerHTML = parseInt(document.getElementById("hardScore").innerHTML) + 0
+    }
+
+    else if ((document.getElementById("hardQuestion").innerHTML === hardQuestions[7].question) && (document.getElementById("hardbuttonD").style.backgroundColor === "rgb(17, 1, 151)")) {
+        document.getElementById("hardScore").innerHTML = parseInt(document.getElementById("hardScore").innerHTML) + 0
+    }
+
+
+
+    else if ((document.getElementById("hardQuestion").innerHTML === hardQuestions[8].question) && (document.getElementById("hardbuttonA").style.backgroundColor === "rgb(17, 1, 151)")) {
+        document.getElementById("hardScore").innerHTML = parseInt(document.getElementById("hardScore").innerHTML) + 0
+    }
+    
+    else if ((document.getElementById("hardQuestion").innerHTML === hardQuestions[8].question) && (document.getElementById("hardbuttonB").style.backgroundColor === "rgb(17, 1, 151)")) {
+        document.getElementById("hardScore").innerHTML = parseInt(document.getElementById("hardScore").innerHTML) + 0
+    }
+
+    else if ((document.getElementById("hardQuestion").innerHTML === hardQuestions[8].question) && (document.getElementById("hardbuttonC").style.backgroundColor === "rgb(17, 1, 151)")) {
+        document.getElementById("hardScore").innerHTML = parseInt(document.getElementById("hardScore").innerHTML) + 0
+    }
+
+    else if ((document.getElementById("hardQuestion").innerHTML === hardQuestions[8].question) && (document.getElementById("hardbuttonD").style.backgroundColor === "rgb(17, 1, 151)")) {
+        document.getElementById("hardScore").innerHTML = parseInt(document.getElementById("hardScore").innerHTML) + 1
+    }
+
+
+
+    else if ((document.getElementById("hardQuestion").innerHTML === hardQuestions[9].question) && (document.getElementById("hardbuttonA").style.backgroundColor === "rgb(17, 1, 151)")) {
+        document.getElementById("hardScore").innerHTML = parseInt(document.getElementById("hardScore").innerHTML) + 0
+        document.getElementById("hardSubmit").style.display = "block"
+        document.getElementById("hardNext").style.display = "none"
+    }
+    
+    else if ((document.getElementById("hardQuestion").innerHTML === hardQuestions[9].question) && (document.getElementById("hardbuttonB").style.backgroundColor === "rgb(17, 1, 151)")) {
+        document.getElementById("hardScore").innerHTML = parseInt(document.getElementById("hardScore").innerHTML) + 1
+        document.getElementById("hardSubmit").style.display = "block"
+        document.getElementById("hardNext").style.display = "none"
+    }
+
+    else if ((document.getElementById("hardQuestion").innerHTML === hardQuestions[9].question) && (document.getElementById("hardbuttonC").style.backgroundColor === "rgb(17, 1, 151)")) {
+        document.getElementById("hardScore").innerHTML = parseInt(document.getElementById("hardScore").innerHTML) + 0
+        document.getElementById("hardSubmit").style.display = "block"
+        document.getElementById("hardNext").style.display = "none"
+    }
+
+    else if ((document.getElementById("hardQuestion").innerHTML === hardQuestions[9].question) && (document.getElementById("hardbuttonD").style.backgroundColor === "rgb(17, 1, 151)")) {
+        document.getElementById("hardScore").innerHTML = parseInt(document.getElementById("hardScore").innerHTML) + 0
+        document.getElementById("hardSubmit").style.display = "block"
+        document.getElementById("hardNext").style.display = "none"
+    }
+
+
+
+    else if ((document.getElementById("hardQuestion").innerHTML === hardQuestions[10].question) && (document.getElementById("hardbuttonA").style.backgroundColor === "rgb(17, 1, 151)")) {
+        document.getElementById("hardScore").innerHTML = parseInt(document.getElementById("hardScore").innerHTML) + 0
+    }
+    
+    else if ((document.getElementById("hardQuestion").innerHTML === hardQuestions[10].question) && (document.getElementById("hardbuttonB").style.backgroundColor === "rgb(17, 1, 151)")) {
+        document.getElementById("hardScore").innerHTML = parseInt(document.getElementById("hardScore").innerHTML) + 0
+    }
+
+    else if ((document.getElementById("hardQuestion").innerHTML === hardQuestions[10].question) && (document.getElementById("hardbuttonC").style.backgroundColor === "rgb(17, 1, 151)")) {
+        document.getElementById("hardScore").innerHTML = parseInt(document.getElementById("hardScore").innerHTML) + 1
+    }
+
+    else if ((document.getElementById("hardQuestion").innerHTML === hardQuestions[10].question) && (document.getElementById("hardbuttonD").style.backgroundColor === "rgb(17, 1, 151)")) {
+        document.getElementById("hardScore").innerHTML = parseInt(document.getElementById("hardScore").innerHTML) + 0
+    }
+
+    // if (document.getElementById("question").innerHTML === "Q.10 What is the yellow part of an egg called?") {
+    //     document.getElementById("examSubmit").style.display = "block"
+    // }
+
+    document.getElementById("hardbuttonA").style.backgroundColor = "rgb(17, 1, 91)"
+    document.getElementById("hardbuttonB").style.backgroundColor = "rgb(17, 1, 91)"
+    document.getElementById("hardbuttonC").style.backgroundColor = "rgb(17, 1, 91)"
+    document.getElementById("hardbuttonD").style.backgroundColor = "rgb(17, 1, 91)"
+}
+
+const hardbuttonA=()=>{
+    document.getElementById("hardbuttonA").style.backgroundColor = "rgb(17, 1, 151)"
+    document.getElementById("hardbuttonB").style.backgroundColor = "rgb(17, 1, 91)"
+    document.getElementById("hardbuttonC").style.backgroundColor = "rgb(17, 1, 91)"
+    document.getElementById("hardbuttonD").style.backgroundColor = "rgb(17, 1, 91)"
+}
+
+const hardbuttonB=()=>{
+    document.getElementById("hardbuttonA").style.backgroundColor = "rgb(17, 1, 91)"
+    document.getElementById("hardbuttonB").style.backgroundColor = "rgb(17, 1, 151)"
+    document.getElementById("hardbuttonC").style.backgroundColor = "rgb(17, 1, 91)"
+    document.getElementById("hardbuttonD").style.backgroundColor = "rgb(17, 1, 91)"
+}
+
+const hardbuttonC=()=>{
+    document.getElementById("hardbuttonA").style.backgroundColor = "rgb(17, 1, 91)"
+    document.getElementById("hardbuttonB").style.backgroundColor = "rgb(17, 1, 91)"
+    document.getElementById("hardbuttonC").style.backgroundColor = "rgb(17, 1, 151)"
+    document.getElementById("hardbuttonD").style.backgroundColor = "rgb(17, 1, 91)"
+}
+
+const hardbuttonD=()=>{
+    document.getElementById("hardbuttonA").style.backgroundColor = "rgb(17, 1, 91)"
+    document.getElementById("hardbuttonB").style.backgroundColor = "rgb(17, 1, 91)"
+    document.getElementById("hardbuttonC").style.backgroundColor = "rgb(17, 1, 91)"
+    document.getElementById("hardbuttonD").style.backgroundColor = "rgb(17, 1, 151)"
+}
+
+const hardSubmit=()=>{
+    if ((document.getElementById("hardbuttonA").style.backgroundColor === "rgb(17, 1, 151)")) {
+        document.getElementById("hardScore").innerHTML = parseInt(document.getElementById("hardScore").innerHTML) + 0
+    }
+    
+    else if ((document.getElementById("hardbuttonB").style.backgroundColor === "rgb(17, 1, 151)")) {
+        document.getElementById("hardScore").innerHTML = parseInt(document.getElementById("hardScore").innerHTML) + 0
+    }
+
+    else if ((document.getElementById("hardbuttonC").style.backgroundColor === "rgb(17, 1, 151)")) {
+        document.getElementById("hardScore").innerHTML = parseInt(document.getElementById("hardScore").innerHTML) + 1
+    }
+
+    else if ((document.getElementById("hardbuttonD").style.backgroundColor === "rgb(17, 1, 151)")) {
+        document.getElementById("hardScore").innerHTML = parseInt(document.getElementById("hardScore").innerHTML) + 0
+    }
+
+    document.getElementById("hardExam").style.display = "none"
+    document.getElementById("hardResult").style.display = "flex"
+
+    if (document.getElementById("hardScore").innerHTML <= 5) {
+        document.getElementById("hardScore").innerHTML = "Your score is " + document.getElementById("hardScore").innerHTML + ". You can do better"
+    }
+
+    else if (document.getElementById("hardScore").innerHTML > 5) {
+        document.getElementById("hardScore").innerHTML = "Your score is " + document.getElementById("hardScore").innerHTML + ". Keep it up"
+    }
+}
+
+const hardHome=()=>{
+    document.getElementById("hardResult").style.display = "none"
     document.getElementById("home").style.display = "flex"
     location.reload(true)
 }
