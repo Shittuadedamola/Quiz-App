@@ -76,18 +76,23 @@
         </div>
     </main>
 
-    <main id="exam">
+    <main id="easyExam">
         <button id="backTwo" onclick="examBack()">back</button>
         <h3 id="level"></h3>
         <h3 id="question"></h3>
-        <button id="buttonA">A. <span id="optOne"></span></button>
-        <button id="buttonB">B. <span id="optTwo"></span></button>
-        <button id="buttonC">C. <span id="optThree"></span></button>
-        <button id="buttonD">D. <span id="optFour"></span></button>
+        <button id="buttonA" onclick="buttonA()">A. <span id="optOne"></span></button>
+        <button id="buttonB" onclick="buttonB()">B. <span id="optTwo"></span></button>
+        <button id="buttonC" onclick="buttonC()">C. <span id="optThree"></span></button>
+        <button id="buttonD" onclick="buttonD()">D. <span id="optFour"></span></button>
         <div id="commands">
-            <button id="examNext" onclick="examNext()">Next</button>
-            <button id="examSubmit">Submit</button>
+            <button id="easyNext" onclick="easyNext()">Next</button>
+            <button id="easySubmit" onclick="easySubmit()">Submit</button>
         </div>
+    </main>
+
+    <main id="easyResult">
+        <h1 id="yourScore">0</h1>
+        <button id="easyHome" onclick="easyHome()">HOME</button>
     </main>
 </body>
 </html>

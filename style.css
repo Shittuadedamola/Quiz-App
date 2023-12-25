@@ -230,7 +230,7 @@
     border: none;
 }
 
-#exam{
+#easyExam{
     display: flex;
     flex-direction: column;
     width: 600px;
@@ -280,7 +280,7 @@
    align-items: center;
 }
 
-#examNext{
+#easyNext{
       /* margin-top: 5%; */
       width: 200px;
       height: 50px;
@@ -292,7 +292,7 @@
       font-size: 1.5rem;
 }
 
-#examSubmit{
+#easySubmit{
       /* margin-top: 5%; */
       width: 200px;
       height: 50px;
@@ -300,7 +300,35 @@
       background: rgb(34, 20, 221);
       border: 3px solid rgb(34, 20, 221);
       border-radius: 30px;
-      /* margin-top: 10%; */
+      margin-top: 10%;
       font-size: 1.5rem;
       display: none;
+}
+
+#easyResult{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 100vh;
+    background: rgb(17, 1, 91);
+    align-items: center;
+    position: relative;
+    display: none;
+}
+
+#yourScore{
+    color: lightblue;
+    margin: 30%;
+    text-align: center;
+}
+
+#easyHome{
+    width: 200px;
+    height: 50px;
+    color: white;
+    background: lightgreen;
+    border: 3px solid lightgreen;
+    border-radius: 30px;
+    margin-top: 10%;
+    font-size: 1.5rem;
 }
