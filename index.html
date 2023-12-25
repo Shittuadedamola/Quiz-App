@@ -39,7 +39,7 @@
         </div>
         <div id="normalDiv">
             <p>Normal</p>
-            <button id="normalQuiz">Start Quiz</button>
+            <button id="normalQuiz" onclick="normalQuiz()">Start Quiz</button>
         </div>
         <div id="hardDiv">
             <p>Hard</p>
@@ -93,6 +93,44 @@
     <main id="easyResult">
         <h1 id="yourScore">0</h1>
         <button id="easyHome" onclick="easyHome()">HOME</button>
+    </main>
+
+    <main id="normalExam">
+        <button id="backTwo" onclick="examBack()">back</button>
+        <h3 id="normalLevel"></h3>
+        <h3 id="normalQuestion"></h3>
+        <button id="normalbuttonA" onclick="normalbuttonA()">A. <span id="normaloptOne"></span></button>
+        <button id="normalbuttonB" onclick="normalbuttonB()">B. <span id="normaloptTwo"></span></button>
+        <button id="normalbuttonC" onclick="normalbuttonC()">C. <span id="normaloptThree"></span></button>
+        <button id="normalbuttonD" onclick="normalbuttonD()">D. <span id="normaloptFour"></span></button>
+        <div id="commands">
+            <button id="normalNext" onclick="normalNext()">Next</button>
+            <button id="normalSubmit" onclick="normalSubmit()">Submit</button>
+        </div>
+    </main>
+
+    <main id="normalResult">
+        <h1 id="normalScore">0</h1>
+        <button id="normalHome" onclick="normalHome()">HOME</button>
+    </main>
+
+    <main id="hardExam">
+        <button id="backTwo" onclick="examBack()">back</button>
+        <h3 id="hardLevel"></h3>
+        <h3 id="hardQuestion"></h3>
+        <button id="hardbuttonA" onclick="hardbuttonA()">A. <span id="hardoptOne"></span></button>
+        <button id="hardbuttonB" onclick="hardbuttonB()">B. <span id="hardoptTwo"></span></button>
+        <button id="hardbuttonC" onclick="hardbuttonC()">C. <span id="hardoptThree"></span></button>
+        <button id="hardbuttonD" onclick="hardbuttonD()">D. <span id="hardoptFour"></span></button>
+        <div id="commands">
+            <button id="hardNext" onclick="hardNext()">Next</button>
+            <button id="hardSubmit" onclick="hardSubmit()">Submit</button>
+        </div>
+    </main>
+
+    <main id="hardResult">
+        <h1 id="hardScore">0</h1>
+        <button id="hardHome" onclick="hardHome()">HOME</button>
     </main>
 </body>
 </html>

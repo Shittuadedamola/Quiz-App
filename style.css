@@ -230,7 +230,7 @@
     border: none;
 }
 
-#easyExam{
+#easyExam, #normalExam, #hardExam{
     display: flex;
     flex-direction: column;
     width: 600px;
@@ -252,13 +252,13 @@
     border: none;
 }
 
-#level{
+#level, #normalLevel, #hardLevel{
     color: white;
     font-size: 2rem;
     margin-top: 20px;
 }
 
-#question{
+#question, #normalQuestion, #hardQuestion{
     color: lightblue;
     font-size: 2rem;
     margin-top: 40px;
@@ -266,7 +266,7 @@
     text-align: center;
 }
 
-#buttonA, #buttonB, #buttonC, #buttonD{
+#buttonA, #buttonB, #buttonC, #buttonD, #normalbuttonA, #normalbuttonB, #normalbuttonC, #normalbuttonD{
     color: white;
     font-size: 2rem;
     margin-bottom: 10px;
@@ -280,7 +280,7 @@
    align-items: center;
 }
 
-#easyNext{
+#easyNext, #normalNext{
       /* margin-top: 5%; */
       width: 200px;
       height: 50px;
@@ -292,7 +292,7 @@
       font-size: 1.5rem;
 }
 
-#easySubmit{
+#easySubmit, #normalSubmit{
       /* margin-top: 5%; */
       width: 200px;
       height: 50px;
@@ -305,7 +305,7 @@
       display: none;
 }
 
-#easyResult{
+#easyResult, #normalResult{
     display: flex;
     flex-direction: column;
     width: 600px;
@@ -316,13 +316,13 @@
     display: none;
 }
 
-#yourScore{
+#yourScore, #normalScore{
     color: lightblue;
     margin: 30%;
     text-align: center;
 }
 
-#easyHome{
+#easyHome, #normalHome{
     width: 200px;
     height: 50px;
     color: white;
@@ -332,3 +332,25 @@
     margin-top: 10%;
     font-size: 1.5rem;
 }
+
+/* #normalExam{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 100vh;
+    background: rgb(17, 1, 91);
+    align-items: center;
+    position: relative;
+    display: none;
+}
+
+#hardExam{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 100vh;
+    background: rgb(17, 1, 91);
+    align-items: center;
+    position: relative;
+    display: none;
+} */
