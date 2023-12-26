@@ -633,7 +633,7 @@ body{
     }
 
     #difficultyAbout p{
-        font-size: 1.2rem;
+        font-size: 1rem;
         margin-bottom: 15px;
     }
 
@@ -644,19 +644,19 @@ body{
     }
 
     #level, #normalLevel, #hardLevel{
-        font-size: 3.5rem;
+        font-size: 2.5rem;
         margin-top: 40px;
     }
 
     #question, #normalQuestion, #hardQuestion{
-        font-size: 2.5rem;
+        font-size: 2rem;
         margin-top: 60px;
         margin-bottom: 30px;
     }
 
     #buttonA, #buttonB, #buttonC, #buttonD, #normalbuttonA, #normalbuttonB, #normalbuttonC, #normalbuttonD, 
     #hardbuttonA, #hardbuttonB, #hardbuttonC, #hardbuttonD{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     #easyNext, #normalNext, #hardNext{

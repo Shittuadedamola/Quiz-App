@@ -32,6 +32,7 @@ const difficultyBack=()=>{
 const examBack=()=>{
     document.getElementById("difficulty").style.display = "flex"
     document.getElementById("easyExam").style.display = "none"
+    location.reload(true)
 }
 var questions = [
     {
