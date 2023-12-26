@@ -100,10 +100,6 @@ const easyNext=()=>{
     document.getElementById("optTwo").innerHTML = questions[u++].option[1]
     document.getElementById("optThree").innerHTML = questions[v++].option[2]
     document.getElementById("optFour").innerHTML = questions[w++].option[3]
-    // document.getElementById("buttonA").style.backgroundColor = "rgb(17, 1, 91)"
-    // document.getElementById("buttonB").style.backgroundColor = "rgb(17, 1, 91)"
-    // document.getElementById("buttonC").style.backgroundColor = "rgb(17, 1, 91)"
-    // document.getElementById("buttonD").style.backgroundColor = "rgb(17, 1, 91)"
 
     if ((document.getElementById("question").innerHTML === questions[1].question) && (document.getElementById("buttonA").style.backgroundColor === "rgb(17, 1, 151)")) {
         document.getElementById("yourScore").innerHTML = parseInt(document.getElementById("yourScore").innerHTML) + 0
@@ -291,10 +287,6 @@ const easyNext=()=>{
         document.getElementById("yourScore").innerHTML = parseInt(document.getElementById("yourScore").innerHTML) + 0
     }
 
-    // if (document.getElementById("question").innerHTML === "Q.10 What is the yellow part of an egg called?") {
-    //     document.getElementById("examSubmit").style.display = "block"
-    // }
-
     document.getElementById("buttonA").style.backgroundColor = "rgb(17, 1, 91)"
     document.getElementById("buttonB").style.backgroundColor = "rgb(17, 1, 91)"
     document.getElementById("buttonC").style.backgroundColor = "rgb(17, 1, 91)"
@@ -431,10 +423,6 @@ const normalNext=()=>{
     document.getElementById("normaloptTwo").innerHTML = normQuestions[c++].option[1]
     document.getElementById("normaloptThree").innerHTML = normQuestions[d++].option[2]
     document.getElementById("normaloptFour").innerHTML = normQuestions[e++].option[3]
-    // document.getElementById("buttonA").style.backgroundColor = "rgb(17, 1, 91)"
-    // document.getElementById("buttonB").style.backgroundColor = "rgb(17, 1, 91)"
-    // document.getElementById("buttonC").style.backgroundColor = "rgb(17, 1, 91)"
-    // document.getElementById("buttonD").style.backgroundColor = "rgb(17, 1, 91)"
 
     if ((document.getElementById("normalQuestion").innerHTML === normQuestions[1].question) && (document.getElementById("normalbuttonA").style.backgroundColor === "rgb(17, 1, 151)")) {
         document.getElementById("normalScore").innerHTML = parseInt(document.getElementById("normalScore").innerHTML) + 0
@@ -622,10 +610,6 @@ const normalNext=()=>{
         document.getElementById("normalScore").innerHTML = parseInt(document.getElementById("normalScore").innerHTML) + 0
     }
 
-    // if (document.getElementById("question").innerHTML === "Q.10 What is the yellow part of an egg called?") {
-    //     document.getElementById("examSubmit").style.display = "block"
-    // }
-
     document.getElementById("normalbuttonA").style.backgroundColor = "rgb(17, 1, 91)"
     document.getElementById("normalbuttonB").style.backgroundColor = "rgb(17, 1, 91)"
     document.getElementById("normalbuttonC").style.backgroundColor = "rgb(17, 1, 91)"
@@ -762,10 +746,6 @@ const hardNext=()=>{
     document.getElementById("hardoptTwo").innerHTML = hardQuestions[i++].option[1]
     document.getElementById("hardoptThree").innerHTML = hardQuestions[j++].option[2]
     document.getElementById("hardoptFour").innerHTML = hardQuestions[k++].option[3]
-    // document.getElementById("buttonA").style.backgroundColor = "rgb(17, 1, 91)"
-    // document.getElementById("buttonB").style.backgroundColor = "rgb(17, 1, 91)"
-    // document.getElementById("buttonC").style.backgroundColor = "rgb(17, 1, 91)"
-    // document.getElementById("buttonD").style.backgroundColor = "rgb(17, 1, 91)"
 
     if ((document.getElementById("hardQuestion").innerHTML === hardQuestions[1].question) && (document.getElementById("hardbuttonA").style.backgroundColor === "rgb(17, 1, 151)")) {
         document.getElementById("hardScore").innerHTML = parseInt(document.getElementById("hardScore").innerHTML) + 1
@@ -952,10 +932,6 @@ const hardNext=()=>{
     else if ((document.getElementById("hardQuestion").innerHTML === hardQuestions[10].question) && (document.getElementById("hardbuttonD").style.backgroundColor === "rgb(17, 1, 151)")) {
         document.getElementById("hardScore").innerHTML = parseInt(document.getElementById("hardScore").innerHTML) + 0
     }
-
-    // if (document.getElementById("question").innerHTML === "Q.10 What is the yellow part of an egg called?") {
-    //     document.getElementById("examSubmit").style.display = "block"
-    // }
 
     document.getElementById("hardbuttonA").style.backgroundColor = "rgb(17, 1, 91)"
     document.getElementById("hardbuttonB").style.backgroundColor = "rgb(17, 1, 91)"
